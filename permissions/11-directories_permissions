@@ -1,2 +1,4 @@
 #!/bin/bash
-find . -type d -exec chmod +x {} \
+for dir in * in $(ls -d */)
+do chmod +x "$dir"
+done
