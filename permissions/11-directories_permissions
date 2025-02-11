@@ -1,4 +1,2 @@
 #!/bin/bash
-for dir in * in $(ls -d */)
-do chmod +x "$dir"
-done
+chmod a+x .
