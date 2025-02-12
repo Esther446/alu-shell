@@ -1,1 +1,2 @@
-awk -v user= "$(stat -C %U hello)" 'BEGIN { if ( user == "guillaume" ) system( "chown vincent:vincent hello" )}'
+#!/bin/bash
+awk -v user= "$(stat -c %U hello)" 'BEGIN {if ( user == "guillaume" ) system( "chown vincent:vincent hello" )}'
